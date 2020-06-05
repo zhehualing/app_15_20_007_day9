@@ -11,7 +11,7 @@ class AnalysisData:
         :return:
         """
         # 打开文件
-        with open("./Data" + os.sep + name, "r") as f:
+        with open("./Data" + os.sep + name, "r",encoding="utf-8") as f:
             # 解析数据
             return yaml.safe_load(f)
 
